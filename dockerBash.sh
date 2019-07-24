@@ -1,7 +1,7 @@
 #!/bin/bash
-yum install -y yum-utils device-mapper-persistent-data lvm2
-yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-yum -y install docker-ce docker-ce-cli containerd.io
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum -y install docker-ce docker-ce-cli containerd.io
 #base=https://github.com/docker/machine/releases/download/v0.16.0
 #curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
 #install /tmp/docker-machine /usr/local/bin/docker-machine
